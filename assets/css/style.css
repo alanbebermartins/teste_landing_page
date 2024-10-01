@@ -2032,3 +2032,114 @@ html {
     }
 }
 
+/* --------------------------- SECÇÃO NEWSLETTER --------------------------- */
+
+.newsletter {
+    background-color: var(--color-black);
+    margin: 30px 0;
+}
+
+.newsletter_container {
+    padding: 30px 15px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    max-width: 360px;
+    margin: 0 auto;
+}
+
+.newsletter_title {
+    color: var(--color-white);
+    margin: 30px 0;
+}
+
+.newsletter_user_name,
+.newsletter_user_email {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.newsletter_complente_name, 
+.newsletter_complete_email {
+    height: 30px;
+    border: none;
+    border-bottom: 1px solid #aaa;;
+    background: transparent;
+    color: white;
+}
+
+.newsletter_complente_name::placeholder,
+.newsletter_complete_email::placeholder {
+    text-align: center;
+    color: #aaa;
+}
+
+.newsletter_promotions_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.newsletter_user_checkbox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.newsletter_checkbox {
+    width: 15px;
+    height: 15px;
+    border: 1px solid white;
+    background: transparent !important;
+    cursor: pointer;
+}
+
+.newsletter_message_information {
+    color: #aaa;
+    font-size: 12px;
+    margin-left: 15px;
+}
+
+.newsletter_subscribe_button {
+    height: 40px;
+    width: 120px;
+    margin: 0 auto 30px auto;
+    background-color: white;
+    border: none;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.newsletter_success_message {
+    display: none;
+    color: yellowgreen;
+    border: 1px solid yellowgreen;
+    font-size: 14px;
+    padding: 10px;
+}
+
+.newsletter_error_message_complete_name,
+.newsletter_error_message_complete_email,
+.newsletter_error_message_checkbox {
+    color: red;
+    font-size: 12px;
+    margin: 5px 0;
+}
+
+@media (min-width: 480px) {
+    .newsletter_title {
+        font-size: 16px;
+    } 
+}
+
+
+@media (max-width: 479px) {
+    .newsletter_title {
+        font-size: 12px;
+    }
+}

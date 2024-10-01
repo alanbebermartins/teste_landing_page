@@ -332,60 +332,99 @@ window.onload = () => {
 };
 
 // /* --------------------------- SECÇÃO DE FEEDBACK DE CLIENTES --------------------------- */
-document.addEventListener("DOMContentLoaded", function() {
-  const feedbackList = document.querySelector(".client_feedback_list");
-  const feedbackItems = document.querySelectorAll(".client_feedback_item");
-  let slidesToShow = 1;
-  let currentIndex = 0;
-  let autoSlideInterval;
 
-  function setSlidesToShow() {
-      const screenWidth = window.innerWidth;
-      if (screenWidth < 660) {
-          slidesToShow = 1;
-      } else if (screenWidth >= 660 && screenWidth < 1024) {
-          slidesToShow = 2;
-      } else if (screenWidth >= 1024 && screenWidth < 1300) {
-          slidesToShow = 3;
-      } else {
-          slidesToShow = 4;
-      }
-      updateSlideVisibility();
+const newsletterForm = document.getElementById('newsletterForm');
+const inputCompleteName = document.getElementById('newsletterCompleteName');
+const errorMessageCompleteName = document.getElementById('newsletterErrorMessageCompleteName');
+const inputCompleteEmail = document.getElementById('newsletterCompleteEmail');
+const errorMessageCompleteEmail = document.getElementById('newsletterErrorMessageCompleteEmail');
+const subscribeButtom = document.getElementById('newsletterSubscribeButton');
+const successMessage = document.getElementById('newsletterSuccessMessage');
+const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+const inputCheckbox = document.getElementById('newsletterCheckbox');
+const errorMessageCheckbox = document.getElementById('newsletterErrorMessageCheckbox');
+
+function validateName() {
+  if (inputCompleteName.value.trim() === '') {
+    errorMessageCompleteName.innerText = 'Campo Obrigatório';
+    return false; // Indica que a validação falhou
+  } else if (inputCompleteName.value.length <= 6) {
+    errorMessageCompleteName.innerText = 'Digite o nome completo!';
+    return false; // Indica que a validação falhou
+  } else {
+    errorMessageCompleteName.innerText = ''; // Limpa a mensagem de erro
+    return true; // Indica que a validação passou
   }
+}
 
-  function updateSlideVisibility() {
-      const totalItems = feedbackItems.length;
-      feedbackList.style.transform = `translateX(-${(currentIndex % totalItems) * (100 / slidesToShow)}%)`;
-
-      // Ajusta a largura de cada item para preencher o container
-      feedbackItems.forEach(item => {
-          item.style.flex = `0 0 ${100 / slidesToShow}%`;
-      });
+function validateEmail() {
+  if (inputCompleteEmail.value.trim() === '') {
+    errorMessageCompleteEmail.innerText = 'Campo obrigatório';
+    return false; // Indica que a validação falhou
+  } else if (!emailRegex.test(inputCompleteEmail.value)) {
+    errorMessageCompleteEmail.innerText = 'Formato de email inválido!';
+    return false; // Indica que a validação falhou
+  } else {
+    errorMessageCompleteEmail.innerText = '';
+    return true; // Indica que a validação passou
   }
+}
 
-  function startAutoSlide() {
-      autoSlideInterval = setInterval(() => {
-          currentIndex++;
-          if (currentIndex >= feedbackItems.length) {
-              currentIndex = 0;
-          }
-          updateSlideVisibility();
-      }, 3000); // Mudar slide a cada 3 segundos
+function validateCheckbox() {
+  if (!inputCheckbox.checked) {
+    errorMessageCheckbox.innerText = 'Checkbox obrigatório';
+    return false; // Indica que a validação falhou
+  } else {
+    errorMessageCheckbox.innerText = '';
+    return true; // Indica que a validação passou
   }
+}
 
-  function stopAutoSlide() {
-      clearInterval(autoSlideInterval);
+function messageSuccess() {
+  successMessage.style.display = 'block';
+  // Oculta a mensagem após 3 segundos (3000 milissegundos)
+  setTimeout(() => {
+    successMessage.style.display = 'none';
+  }, 2000);
+}
+
+// Função para limpar os campos
+function clearFields() {
+  inputCompleteName.value = '';
+  inputCompleteEmail.value = '';
+  inputCheckbox.checked = false; // Desmarca o checkbox
+  errorMessageCompleteName.innerText = ''; // Limpa mensagem de erro
+  errorMessageCompleteEmail.innerText = ''; // Limpa mensagem de erro
+  errorMessageCheckbox.innerText = ''; // Limpa mensagem de erro
+}
+
+
+// Adiciona um listener para o evento 'input' no campo de nome completo
+inputCompleteName.addEventListener('input', validateName);
+inputCompleteEmail.addEventListener('input', validateEmail);
+
+// Adiciona um listener para o checkbox
+inputCheckbox.addEventListener('change', () => {
+  if (inputCheckbox.checked) {
+    errorMessageCheckbox.innerText = ''; // Limpa mensagem de erro ao marcar o checkbox
+  } else {
+    errorMessageCheckbox.innerText = 'Checkbox obrigatório'; // Mostra mensagem se desmarcado
   }
+});
 
-  // Atualiza o número de slides visíveis ao redimensionar a janela
-  window.addEventListener("resize", setSlidesToShow);
-
-  // Inicia o carrossel
-  setSlidesToShow();
-  startAutoSlide();
-
-  // Pausa o carrossel ao passar o mouse
-  feedbackList.addEventListener("mouseenter", stopAutoSlide);
-  feedbackList.addEventListener("mouseleave", startAutoSlide);
+// Listener do botão
+subscribeButtom.addEventListener('click', (event) => {
+  event.preventDefault();
+  
+  // Verifica se todas as validações passaram
+  const isNameValid = validateName();
+  const isEmailValid = validateEmail();
+  const isCheckboxValid = validateCheckbox();
+  
+  // Se todos os campos forem válidos, mostra a mensagem de sucesso
+  if (isNameValid && isEmailValid && isCheckboxValid) {
+    messageSuccess();
+    clearFields(); // Limpa os campos após o envio
+  }
 });
 
