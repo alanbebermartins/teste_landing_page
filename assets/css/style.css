@@ -903,6 +903,7 @@ html {
 
 .shop_now_brand_fundation {
     font-weight: 500;
+    letter-spacing: 2px;
 }
 
 .shop_now_brand_title {
@@ -1895,3 +1896,139 @@ html {
     }
 
 }
+
+/* --------------------------- SECÇÃO ARTISTA PRODUTO --------------------------- */
+
+.artist_area {
+    background-color: #F1EEEE;
+    margin-top: 30px;
+}
+
+.artist_image {
+    width: 100%;
+}
+
+.artist_container_image {
+    width: 50%;
+    display: flex;
+    align-items: center;
+}
+
+.artist_container_descriptions {
+    padding: 30px 15px;
+    width: 50%;
+    background-color: #F1EEEE;
+    height: 350px;
+}
+
+.artist_information {
+    width: 100%;
+    max-width: 470px;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.artist_brand_fundation {
+    font-weight: 500;
+    letter-spacing: 2px;
+}
+
+.artist_brand_title {
+    font-size: 30px;
+    padding: 12px 0;
+    font-weight: 900;
+}
+
+.artist_brand_description{
+    font-size: 14px;
+    font-weight: 500;
+    padding-bottom: 12px;
+}
+
+.artist_brand_purchase_now {
+    padding: 14px;
+    background: linear-gradient(to bottom left, rgba(0, 0, 0, 1), rgba(64, 64, 64, 1));
+    color: var(--color-white);
+    border: none;
+    margin: 0 auto;
+    cursor: pointer;
+    font-size: 12px;
+    width: 140px;
+}
+
+.artist_container_additional_information {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 0 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.artist_container_additional_information_image {
+    width: 70px;
+    height: 59px;
+    align-self: center;
+    margin: 20px 0 10px 0;
+}
+
+.artist_container_additional_information_brand_first_name {
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+
+.artist_container_additional_information_brand_secondary_name {
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+.artist_container_additional_information_primary_message {
+    margin-bottom: 30px;
+}
+
+.artist_container_additional_information_primary_message,
+.artist_container_additional_information_secondary_message {
+    font-size: 12px;
+}
+
+@media (min-width: 1024px){
+    .artist_container_additional_information {
+        width: 750px ;
+    }
+}
+
+@media (min-width: 800px) and (max-width: 1023px) {
+    .artist_container_additional_information {
+        width: 700px;
+    }
+}
+
+@media (min-width: 800px){
+    .artist_area {
+        display: flex;
+        align-items: center;
+        /* flex-direction: row-reverse; */
+    }
+}
+
+@media (max-width: 799px) {
+    .artist_container_image,
+    .artist_container_descriptions {
+        width: 100%;
+    }
+
+    .artist_container_additional_information {
+        max-width: 500px;
+    }
+}
+
+@media (max-width: 419px) {
+    .artist_brand_title {
+        font-size: 24px;
+    }
+}
+
