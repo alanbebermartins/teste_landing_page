@@ -1,0 +1,1502 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <!-- Importação do Font Awesome Free CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+
+</head>
+<body>
+    <header>
+        <div class="header_main">
+            <div class="header_topbar">
+              <button class="carousel-control prev" onclick="showPrevious()">&#10094;</button>
+              <div class="header_topbar-wrapper">
+                <div class="header_topbar-item topbar_item01">Compre em até 6x sem juros</div>
+                <div class="header_topbar-item topbar_item02">Frete Grátis todo o Brasil nas compras acima de R$600</div>
+                <div class="header_topbar-item topbar_item03">Parcelamento em até 10x sem juros</div>
+              </div>
+              <button class="carousel-control next" onclick="showNext()">&#10095;</button>
+            </div>
+            <div class="topbar_middle-navigation">
+                <div class="topbar_middle-box01">
+                    <i class="topbar_middle-box01-icon01 fa-solid fa-bars fa-xl" style="color: white;"></i>
+                    <i class="topbar_middle-box01-icon02 fa-regular fa-heart fa-xl" style="color: white;"></i>
+                    <div class="container_search_bar">
+                        <input class="topbar_middle-box01-search-bar" type="search" placeholder="BUSCAR">
+                        <i class="search_bar_icon fa-solid fa-magnifying-glass fa-xl" style="color: white;"></i>
+                    </div>
+                </div>
+                <div class="topbar_middle-box02"></div>
+                <div class="topbar_middle-box03">
+                    <i class="topbar_middle-box03-icon01 fa-regular fa-heart fa-xl" style="color: white;"></i>
+                    <i class="topbar_middle-box03-icon02 fa-regular fa-user fa-xl" style="color: white;"></i>
+                    <i class="topbar_middle-box03-icon03 fa-solid fa-bag-shopping fa-xl" style="color: white;"></i>
+                </div>
+            </div>
+            <div class="header_bottom_bar">
+                <div class="bottom_bar-search">
+                    <div class="bottom_bar_box-title">
+                        <p class="bottom_bar-search-title">BUSCA</p>
+                    </div>
+                    <div class="bottom_bar_box-search-bar">
+                        <input class="bottom_bar-search-bar" type="search" placeholder="EX.: CAMISETA">
+                    </div>
+                    <div class="bottom_bar_box-seach-icon">
+                        <i class="bottom_bar-search-icon fa-solid fa-magnifying-glass fa-xl" style="color: #000000;"></i>
+                    </div>
+                </div>
+                <nav class="bottom_bar-menu">
+                    <ul class="bottom_bar-menu-list">
+                        <li class="bottom_bar-menu-item"><a href="">TODA A LOJA</a></li>
+                        <li class="bottom_bar-menu-item"><a href="">ROUPAS</a></li>
+                        <li class="bottom_bar-menu-item"><a href="">CALÇADOS</a></li>
+                        <li class="bottom_bar-menu-item"><a href="">ACESSÓRIOS</a></li>
+                        <li class="bottom_bar-menu-item"><a href="">PERFUMES</a></li>
+                        <li class="bottom_bar-menu-item"><a href="">MARCAS</a></li>
+                        <li class="bottom_bar-menu-item"><a href="">INFANTIL</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+          
+    </header>
+    <section>
+        <div class="banner_main">
+            <div class="carousel-container">
+                <div class="banner_main_carousel">
+                    <div class="banner_main_carousel-item slide_info01">
+                        <div class="banner_main_info_main">
+                            <div class="banner_main_info_logo">
+                                <img class="banner_image01" src="/assets/images/monkey_black.JPG" alt="">
+                            </div>
+                            <div class="banner_main_info_description">
+                                <p class="banner_main_info_description-primary-main">NOVIDADES</p>
+                                <p class="banner_main_info_description-secondary-title">RELÓGIOS DE PULSO</p>
+                            </div>
+                            <div class="banner_main_info_purchase">
+                                <button class="banner_main_info_purchase-button">COMPRE AGORA</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="banner_main_carousel-item slide_info02">
+                        <img class="banner_image02" src="/assets/images/relogio_1.JPG" alt="Relógio de pulso masculino preto com alça preta">
+                    </div>
+                    <div class="banner_main_carousel-item slide_info03">
+                        <img class="banner_image03" src="/assets/images/relogio_2.JPG" alt="Relógio de pulso masculino verde com alça preta">
+                    </div>
+                    <div class="banner_main_carousel-item slide_info04">
+                        <img class="banner_image04" src="/assets/images/relogio_3.JPG" alt="Relógio de pulso masculino de ouro com alça de couro marrom">
+                    </div>
+                </div>
+                <button class="banner_main_carousel-prev">&lt;</button>
+                <button class="banner_main_carousel-next">&gt;</button>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="category_container">
+            <div class="category_top">
+                <p class="category_top-title">Compre por Categoria</p>
+            </div>
+            <div class="category_slider_side-container">
+                <button class="slider-nav prev" onclick="prevSlide()">&#10094;</button>
+                <ul class="category_slider_side">
+                    <li class="category_slider_side-item">
+                        <div class="category_image_purchase-container">
+                            <img class="category_slider_side-image" src="/assets/images/categoria_acessorios.jpeg" alt="Acessorios">
+                            <button class="category_slider_side-button">COMPRE AGORA</button>
+                            <p class="category_slider_side_subtitle">Acessorios</p>
+                        </div>
+                    </li>
+                    <li class="category_slider_side-item">
+                        <div class="category_image_purchase-container">
+                            <img class="category_slider_side-image" src="/assets/images/categoria_blusas.jpeg" alt="Blusas">
+                            <button class="category_slider_side-button">COMPRE AGORA</button>
+                            <p class="category_slider_side_subtitle">Blusas</p>
+                        </div>
+                    </li>
+                    <li class="category_slider_side-item">
+                        <div class="category_image_purchase-container">
+                            <img class="category_slider_side-image" src="/assets/images/categoria_calcas.jpeg" alt="Calças">
+                            <button class="category_slider_side-button">COMPRE AGORA</button>
+                            <p class="category_slider_side_subtitle">Calças</p>
+                        </div>
+                    </li>
+                    <li class="category_slider_side-item">
+                        <div class="category_image_purchase-container">
+                            <img class="category_slider_side-image" src="/assets/images/categoria_camisetas.jpeg" alt="Camisetas">
+                            <button class="category_slider_side-button">COMPRE AGORA</button>
+                            <p class="category_slider_side_subtitle">Camisetas</p>
+                        </div>
+                    </li>
+                    <li class="category_slider_side-item">
+                        <div class="category_image_purchase-container">
+                            <img class="category_slider_side-image" src="/assets/images/categoria_perfumes.jpeg" alt="Perfumes">
+                            <button class="category_slider_side-button">COMPRE AGORA</button>
+                            <p class="category_slider_side_subtitle">Perfumes</p>
+                        </div>
+                    </li>
+                    <li class="category_slider_side-item">
+                        <div class="category_image_purchase-container">
+                            <img class="category_slider_side-image" src="/assets/images/categoria_tenis.jpg" alt="Tenis">
+                            <button class="category_slider_side-button">COMPRE AGORA</button>
+                            <p class="category_slider_side_subtitle">Tenis</p>
+                        </div>
+                    </li>
+                </ul>
+                <button class="slider-nav next" onclick="nextSlide()">&#10095;</button>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="brand_container">
+            <ul class="brand_list">
+                <li class="brand_item">
+                    <img src="/assets/images/brand_fred_perry.jpeg" alt="Logo da Marca Fred perry" class="brand_image">
+                </li>
+                <li class="brand_item">
+                    <img src="/assets/images/brand_hugo.jpeg" alt="Logo da Marca Hugo Boss" class="brand_image">
+                </li>
+                <li class="brand_item">
+                    <img src="/assets/images/brand_moschino.jpg" alt="Logo da Marca Mochino" class="brand_image">
+                </li>
+                <li class="brand_item">
+                    <img src="/assets/images/brand_offwhite.jpg" alt="Logo da Marca Offwhite" class="brand_image">
+                </li>
+                <li class="brand_item">
+                    <img src="/assets/images/brand_palm_angels.jpeg" alt="Logo da Marca Palm Angels" class="brand_image">
+                </li>
+                <li class="brand_item">
+                    <img src="/assets/images/brand_versace.jpg" alt="Logo da Marca Versace" class="brand_image">
+                </li>
+            </ul>
+        </div>
+    </section>
+    <section>
+        <div class="specific_brand_product">
+            <div class="specific_brand">
+                <div class="specific_brand_item_logo">
+                    <img src="assets/images/monkey_black_bg_white.JPG" alt="Logo macaco preto fundo brando" class="brand_logo_monkey">
+                    <img src="assets/images/vertical_line.JPG" alt="Linha vertical" class="brand_logo_vertical_line">
+                    <img src="assets/images/brand_lacoste_aligator.JPG" alt="Logo lacoste" class="brand_logo_manufacture">
+                </div>
+                <div class="specific_brand_info_purchase">
+                    <h2 class="specific_brand_title">Lacoste Active Rwy</h2>
+                    <p class="specific_brand_description">Conheça a linha Lacoste Active Rwy na Tatuapé Conceito</p>
+                    <button class="specific_brand_purchase_now">COMPRE AGORA</button>
+                </div>
+            </div>
+            <div class="specific_product">
+                <img class="specific_product_image" src="assets/images/lacoste_sneakers.JPG" alt="Tenis laranja da Lacoste">
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="recommended_products">
+            <div class="recommended_products_top"></div>
+                <p class="recommended_products_top-title">Recomendados para você</p>
+            </div>
+            <div class="recommended_products_slider_side-container">
+                <button class="recommended_products_slider-nav-prev" onclick="prevSlideRecommendedProducts()">&#10094;</button>
+                <ul class="recommended_products_list">
+                    <li class="recommended_products_item">
+                        <div class="recommended_products_item_image">
+                            <img src="/assets/images/recommended_glasses.png" alt="Óculos escuros phillip plein" class="recommended_item_image">
+                            <div class="recommended_product_information">
+                                <p class="recommended_product_title">Óculos de sol Philipp Plein - Preto</p>
+                                <div class="recommended_product_prices">
+                                    <p class="recommended_product_new_price">R$ 2958,98</p>
+                                    <p class="recommended_product_old_price">R$ 4385,00</p>
+                                    <p class="recommended_product_installment_price">10x R$ 438,50</p>
+                                </div>
+                                <p class="recommended_product_other_information"><span>R$ 2732,00</span> no PIX</p>
+                                <p class="recommended_product_plus_information">+19 cores</p>
+                            </div>
+                            <div class="recommended_product_discount_favorite">
+                                <div class="product_discount">
+                                    <p class="product_discount_title">LANÇAMENTO</p>
+                                    <p class="product_discount_percentage">30% de desconto</p>
+                                </div>
+                                <div class="product_favorite">
+                                    <i class="product_favorite-icon fa-regular fa-heart fa-xl" style="color: black;"></i>
+                                </div>
+                            </div>
+                            <div class="recommended_product_purchase_options">
+                                <div class="recommended_product_options">
+                                    <div class="recommended_product_options_container">
+                                        <p class="recommended_product_options-info">TU</p>
+                                    </div>
+                                </div>
+                                <div class="recommended_product_purchase">
+                                    <button class="recommended_product_purchase-btn">COMPRE AGORA</button>
+                                </div>
+                            </div>
+                        </div> 
+                    </li>
+                    <li class="recommended_products_item">
+                        <div class="recommended_products_item_image">
+                            <img src="/assets/images/recommended_perfum_hugo_boss.png" alt="Conjunto perfume hubo boss" class="recommended_item_image">
+                            <div class="recommended_product_information">
+                                <p class="recommended_product_title">Conjunto perfume Hugo Boss</p>
+                                <div class="recommended_product_prices">
+                                    <p class="recommended_product_new_price">R$ 303,15</p>
+                                    <p class="recommended_product_old_price">R$ 449,25</p>
+                                    <p class="recommended_product_installment_price">3x R$ 149,75</p>
+                                </div>
+                                <p class="recommended_product_other_information"><span>R$ 298,85</span> no PIX</p>
+                                <p class="recommended_product_plus_information">+19 cores</p>
+                            </div>
+                            <div class="recommended_product_discount_favorite">
+                                <div class="product_discount">
+                                    <p class="product_discount_title" style="visibility: hidden;">LANÇAMENTO</p>
+                                    <p class="product_discount_percentage" style="visibility: hidden;">30% de desconto</p>
+                                </div>
+                                <div class="product_favorite">
+                                    <i class="product_favorite-icon fa-regular fa-heart fa-xl" style="color: black;"></i>
+                                </div>
+                            </div>
+                            <div class="recommended_product_purchase_options">
+                                <div class="recommended_product_options">
+                                    <div class="recommended_product_options_container">
+                                        <p class="recommended_product_options-info">OU</p>
+                                    </div>
+                                </div>
+                                <div class="recommended_product_purchase">
+                                    <button class="recommended_product_purchase-btn">COMPRE AGORA</button>
+                                </div>
+                            </div>
+                        </div> 
+                    </li>
+                    <li class="recommended_products_item">
+                        <div class="recommended_products_item_image">
+                            <img src="/assets/images/recommended_short.png" alt="Short preto Hugo" class="recommended_item_image">
+                            <div class="recommended_product_information">
+                                <p class="recommended_product_title">Short Fab Hugo - Preto</p>
+                                <div class="recommended_product_prices">
+                                    <p class="recommended_product_new_price">R$ 411,63</p>
+                                    <p class="recommended_product_old_price">R$ 610,00</p>
+                                    <p class="recommended_product_installment_price">3x R$ 203,33</p>
+                                </div>
+                                <p class="recommended_product_other_information"><span>R$ 380,05</span> no PIX</p>
+                                <p class="recommended_product_plus_information">+19 cores</p>
+                            </div>
+                            <div class="recommended_product_discount_favorite">
+                                <div class="product_discount">
+                                    <p class="product_discount_title" style="visibility: hidden;">LANÇAMENTO</p>
+                                    <p class="product_discount_percentage" style="visibility: hidden;">30% de desconto</p>
+                                </div>
+                                <div class="product_favorite">
+                                    <i class="product_favorite-icon fa-regular fa-heart fa-xl" style="color: black;"></i>
+                                </div>
+                            </div>
+                            <div class="recommended_product_purchase_options">
+                                <div class="recommended_product_options">
+                                    <div class="recommended_product_options_container">
+                                        <p class="recommended_product_options-info">P</p>
+                                    </div>
+                                    <div class="recommended_product_options_container">
+                                        <p class="recommended_product_options-info">M</p>
+                                    </div>
+                                    <div class="recommended_product_options_container">
+                                        <p class="recommended_product_options-info">G</p>
+                                    </div>
+                                    <div class="recommended_product_options_container">
+                                        <p class="recommended_product_options-info">GG</p>
+                                    </div>
+                                    <div class="recommended_product_options_container">
+                                        <p class="recommended_product_options-info">2G</p>
+                                    </div>
+                                </div>
+                                <div class="recommended_product_purchase">
+                                    <button class="recommended_product_purchase-btn">COMPRE AGORA</button>
+                                </div>
+                            </div>
+                        </div> 
+                    </li>
+                    <li class="recommended_products_item">
+                        <div class="recommended_products_item_image">
+                            <img src="/assets/images/recommended_sneaker.png" alt="Tenis branco Lacoste" class="recommended_item_image">
+                            <div class="recommended_product_information">
+                                <p class="recommended_product_title">Tênis Lacoste LT 125 -Branco</p>
+                                <div class="recommended_product_prices">
+                                    <p class="recommended_product_new_price">R$ 809,08</p>
+                                    <p class="recommended_product_old_price">R$ 1199,00</p>
+                                    <p class="recommended_product_installment_price">6x R$ 199,83</p>
+                                </div>
+                                <p class="recommended_product_other_information"><span>R$ 747,02</span> no PIX</p>
+                                <p class="recommended_product_plus_information">+19 cores</p>
+                            </div>
+                            <div class="recommended_product_discount_favorite">
+                                <div class="product_discount">
+                                    <p class="product_discount_title" style="visibility: hidden;">LANÇAMENTO</p>
+                                    <p class="product_discount_percentage" style="visibility: hidden;">30% de desconto</p>
+                                </div>
+                                <div class="product_favorite">
+                                    <i class="product_favorite-icon fa-regular fa-heart fa-xl" style="color: black;"></i>
+                                </div>
+                            </div>
+                            <div class="recommended_product_purchase_options">
+                                <div class="recommended_product_options">
+                                    <div class="recommended_product_options_container">
+                                        <p class="recommended_product_options-info">38</p>
+                                    </div>
+                                    <div class="recommended_product_options_container">
+                                        <p class="recommended_product_options-info">39</p>
+                                    </div>
+                                    <div class="recommended_product_options_container">
+                                        <p class="recommended_product_options-info">40</p>
+                                    </div>
+                                    <div class="recommended_product_options_container">
+                                        <p class="recommended_product_options-info">41</p>
+                                    </div>
+                                    <div class="recommended_product_options_container">
+                                        <p class="recommended_product_options-info">42</p>
+                                    </div>
+                                </div>
+                                <div class="recommended_product_purchase">
+                                    <button class="recommended_product_purchase-btn">COMPRE AGORA</button>
+                                </div>
+                            </div>
+                        </div> 
+                    </li>
+                    <li class="recommended_products_item">
+                        <div class="recommended_products_item_image">
+                            <img src="/assets/images/recommended_sweater.png" alt="Sueter Hugo Stackon preto" class="recommended_item_image">
+                            <div class="recommended_product_information">
+                                <p class="recommended_product_title">Sueter Hugo Stackon - Preto</p>
+                                <div class="recommended_product_prices">
+                                    <p class="recommended_product_new_price">R$ 1086,42</p>
+                                    <p class="recommended_product_old_price">R$ 1610,00</p>
+                                    <p class="recommended_product_installment_price">10x R$ 161,00</p>
+                                </div>
+                                <p class="recommended_product_other_information"><span>R$ 1003,09</span> no PIX</p>
+                                <p class="recommended_product_plus_information">+19 cores</p>
+                            </div>
+                            <div class="recommended_product_discount_favorite">
+                                <div class="product_discount">
+                                    <p class="product_discount_title" style="visibility: hidden;">LANÇAMENTO</p>
+                                    <p class="product_discount_percentage" style="visibility: hidden;">30% de desconto</p>
+                                </div>
+                                <div class="product_favorite">
+                                    <i class="product_favorite-icon fa-regular fa-heart fa-xl" style="color: black;"></i>
+                                </div>
+                            </div>
+                            <div class="recommended_product_purchase_options">
+                                <div class="recommended_product_options">
+                                    <div class="recommended_product_options_container">
+                                        <p class="recommended_product_options-info">P</p>
+                                    </div>
+                                    <div class="recommended_product_options_container">
+                                        <p class="recommended_product_options-info">M</p>
+                                    </div>
+                                    <div class="recommended_product_options_container">
+                                        <p class="recommended_product_options-info">G</p>
+                                    </div>
+                                </div>
+                                <div class="recommended_product_purchase">
+                                    <button class="recommended_product_purchase-btn">COMPRE AGORA</button>
+                                </div>
+                            </div>
+                        </div> 
+                    </li>
+                    <li class="recommended_products_item">
+                        <div class="recommended_products_item_image">
+                            <img src="/assets/images/recommended_t_shirt.png" alt="Camisa polo branca com detalhe em vermelho" class="recommended_item_image">
+                            <div class="recommended_product_information">
+                                <p class="recommended_product_title">Camisa Polo Hugo Deresino - Branca</p>
+                                <div class="recommended_product_prices">
+                                    <p class="recommended_product_new_price">R$ 593,82</p>
+                                    <p class="recommended_product_old_price">R$ 880,00</p>
+                                    <p class="recommended_product_installment_price">4x R$ 220,00</p>
+                                </div>
+                                <p class="recommended_product_other_information"><span>R$ 548,27</span> no PIX</p>
+                                <p class="recommended_product_plus_information">+19 cores</p>
+                            </div>
+                            <div class="recommended_product_discount_favorite">
+                                <div class="product_discount">
+                                    <p class="product_discount_title" style="visibility: hidden;">LANÇAMENTO</p>
+                                    <p class="product_discount_percentage" style="visibility: hidden;">30% de desconto</p>
+                                </div>
+                                <div class="product_favorite">
+                                    <i class="product_favorite-icon fa-regular fa-heart fa-xl" style="color: black;"></i>
+                                </div>
+                            </div>
+                            <div class="recommended_product_purchase_options">
+                                <div class="recommended_product_options">
+                                    <div class="recommended_product_options_container">
+                                        <p class="recommended_product_options-info">M</p>
+                                    </div>
+                                    <div class="recommended_product_options_container">
+                                        <p class="recommended_product_options-info">G</p>
+                                    </div>
+                                    <div class="recommended_product_options_container">
+                                        <p class="recommended_product_options-info">2G</p>
+                                    </div>
+                                </div>
+                                <div class="recommended_product_purchase">
+                                    <button class="recommended_product_purchase-btn">COMPRE AGORA</button>
+                                </div>
+                            </div>
+                        </div> 
+                    </li>
+                </ul>
+                <button class="recommended_products_slider-nav-next" onclick="nextSlideRecommendedProducts()">&#10095;</button>
+            </div>
+        </div>
+    </section>
+    <section>
+       <div class="shop_now_area">
+           <div class="shop_now_container_image">
+                <img class="shop_now_image" src="assets/images/shop_now.JPG" alt="Foto de um homemde oculos escuros, tatuagem e oculos escuros, no meio das palavras shop now na cor branca" >
+           </div>
+           <div class="shop_now_container_descriptions">
+                <div class="shop_now_information">
+                    <p class="shop_now_brand_fundation">D E S D E  1 9 5 8</p>
+                    <h2 class="shop_now_brand_title">Sneakers Shop</h2>
+                    <p class="shop_now_brand_description">Descubra os sneakers Lacoste para homem e mulher desde os mais esportivos aos mais modernos, incluindo os mais clássicos tênis esportivos.</p>
+                    <button class="shop_now_brand_purchase_now">COMPRE AGORA</button>
+                </div>
+           </div>
+       </div>
+    </section>
+    <section>
+        <div class="best_sellers">
+            <div class="best_sellers_top">
+                <p class="best_sellers_top-title">Mais vendidos</p>
+            </div>
+            <div class="best_sellers_slider_side-container">
+                <button class="best_sellers_slider-nav-prev" onclick="prevSlideBestSellers()">&#10094;</button>
+                <ul class="best_sellers_list">
+                    <li class="best_sellers_item">
+                        <div class="best_sellers_item_image">
+                            <img src="/assets/images/recommended_glasses.png" alt="Óculos escuros phillip plein" class="best_sellers_image">
+                            <div class="best_sellers_information">
+                                <p class="best_sellers_title">Óculos de sol Philipp Plein - Preto</p>
+                                <div class="best_sellers_prices">
+                                    <p class="best_sellers_new_price">R$ 2958,98</p>
+                                    <p class="best_sellers_old_price">R$ 4385,00</p>
+                                    <p class="best_sellers_installment_price">10x R$ 438,50</p>
+                                </div>
+                                <p class="best_sellers_other_information"><span>R$ 2732,00</span> no PIX</p>
+                                <p class="best_sellers_plus_information">+19 cores</p>
+                            </div>
+                            <div class="best_sellers_discount_favorite">
+                                <div class="best_sellers_discount">
+                                    <p class="best_sellers_discount_title">LANÇAMENTO</p>
+                                    <p class="best_sellers_percentage">30% de desconto</p>
+                                </div>
+                                <div class="best_sellers_favorite">
+                                    <i class="best_sellers_favorite-icon fa-regular fa-heart fa-xl" style="color: black;"></i>
+                                </div>
+                            </div>
+                            <div class="best_sellers_purchase_options">
+                                <div class="best_sellers_options">
+                                    <div class="best_sellers_ptions_container">
+                                        <p class="best_sellers_options-info">TU</p>
+                                    </div>
+                                </div>
+                                <div class="best_sellers_purchase">
+                                    <button class="best_sellers_purchase-btn">COMPRE AGORA</button>
+                                </div>
+                            </div>
+                        </div> 
+                    </li>
+                    <li class="best_sellers_item">
+                        <div class="best_sellers_item_image">
+                            <img src="/assets/images/recommended_perfum_hugo_boss.png" alt="Conjunto perfume Hugo Boss" class="best_sellers_image">
+                            <div class="best_sellers_information">
+                                <p class="best_sellers_title">Conjunto perfume Hugo Boss</p>
+                                <div class="best_sellers_prices">
+                                    <p class="best_sellers_new_price">R$ 303,15</p>
+                                    <p class="best_sellers_old_price">R$ 449,25</p>
+                                    <p class="best_sellers_installment_price">3x R$ 149,75</p>
+                                </div>
+                                <p class="best_sellers_other_information"><span>R$ 298,85</span> no PIX</p>
+                                <p class="best_sellers_plus_information">+19 cores</p>
+                            </div>
+                            <div class="best_sellers_discount_favorite">
+                                <div class="best_sellers_discount">
+                                    <p class="best_sellers_discount_title" style="visibility: hidden;">LANÇAMENTO</p>
+                                    <p class="best_sellers_percentage" style="visibility: hidden;">30% de desconto</p>
+                                </div>
+                                <div class="best_sellers_favorite">
+                                    <i class="best_sellers_favorite-icon fa-regular fa-heart fa-xl" style="color: black;"></i>
+                                </div>
+                            </div>
+                            <div class="best_sellers_purchase_options">
+                                <div class="best_sellers_options">
+                                    <div class="best_sellers_ptions_container">
+                                        <p class="best_sellers_options-info">OU</p>
+                                    </div>
+                                </div>
+                                <div class="best_sellers_purchase">
+                                    <button class="best_sellers_purchase-btn">COMPRE AGORA</button>
+                                </div>
+                            </div>
+                        </div> 
+                    </li>
+                    <li class="best_sellers_item">
+                        <div class="best_sellers_item_image">
+                            <img src="/assets/images/recommended_short.png" alt="Short Fab Hugo - Preto" class="best_sellers_image">
+                            <div class="best_sellers_information">
+                                <p class="best_sellers_title">Short Fab Hugo - Preto</p>
+                                <div class="best_sellers_prices">
+                                    <p class="best_sellers_new_price">R$ 411,63</p>
+                                    <p class="best_sellers_old_price">R$ 610,00</p>
+                                    <p class="best_sellers_installment_price">3x R$ 203,33</p>
+                                </div>
+                                <p class="best_sellers_other_information"><span>R$ 380,05</span> no PIX</p>
+                                <p class="best_sellers_plus_information">+19 cores</p>
+                            </div>
+                            <div class="best_sellers_discount_favorite">
+                                <div class="best_sellers_discount">
+                                    <p class="best_sellers_discount_title" style="visibility: hidden;">LANÇAMENTO</p>
+                                    <p class="best_sellers_percentage" style="visibility: hidden;">30% de desconto</p>
+                                </div>
+                                <div class="best_sellers_favorite">
+                                    <i class="best_sellers_favorite-icon fa-regular fa-heart fa-xl" style="color: black;"></i>
+                                </div>
+                            </div>
+                            <div class="best_sellers_purchase_options">
+                                <div class="best_sellers_options">
+                                    <div class="best_sellers_ptions_container">
+                                        <p class="best_sellers_options-info">P</p>
+                                    </div>
+                                    <div class="best_sellers_ptions_container">
+                                        <p class="best_sellers_options-info">M</p>
+                                    </div>
+                                    <div class="best_sellers_ptions_container">
+                                        <p class="best_sellers_options-info">GG</p>
+                                    </div>
+                                    <div class="best_sellers_ptions_container">
+                                        <p class="best_sellers_options-info">2G</p>
+                                    </div>
+                                </div>
+                                <div class="best_sellers_purchase">
+                                    <button class="best_sellers_purchase-btn">COMPRE AGORA</button>
+                                </div>
+                            </div>
+                        </div> 
+                    </li>
+                    <li class="best_sellers_item">
+                        <div class="best_sellers_item_image">
+                            <img src="/assets/images/recommended_sneaker.png" alt="Tênis Lacoste LT 125 - Branco" class="best_sellers_image">
+                            <div class="best_sellers_information">
+                                <p class="best_sellers_title">Tênis Lacoste LT 125 - Branco</p>
+                                <div class="best_sellers_prices">
+                                    <p class="best_sellers_new_price">R$ 809,08</p>
+                                    <p class="best_sellers_old_price">R$ 1199,00</p>
+                                    <p class="best_sellers_installment_price">6x R$ 189,83</p>
+                                </div>
+                                <p class="best_sellers_other_information"><span>R$ 747,02</span> no PIX</p>
+                                <p class="best_sellers_plus_information">+19 cores</p>
+                            </div>
+                            <div class="best_sellers_discount_favorite">
+                                <div class="best_sellers_discount">
+                                    <p class="best_sellers_discount_title" style="visibility: hidden;">LANÇAMENTO</p>
+                                    <p class="best_sellers_percentage" style="visibility: hidden;">30% de desconto</p>
+                                </div>
+                                <div class="best_sellers_favorite">
+                                    <i class="best_sellers_favorite-icon fa-regular fa-heart fa-xl" style="color: black;"></i>
+                                </div>
+                            </div>
+                            <div class="best_sellers_purchase_options">
+                                <div class="best_sellers_options">
+                                    <div class="best_sellers_ptions_container">
+                                        <p class="best_sellers_options-info">39</p>
+                                    </div>
+                                    <div class="best_sellers_ptions_container">
+                                        <p class="best_sellers_options-info">41</p>
+                                    </div>
+                                    <div class="best_sellers_ptions_container">
+                                        <p class="best_sellers_options-info">44</p>
+                                    </div>
+                                    <div class="best_sellers_ptions_container">
+                                        <p class="best_sellers_options-info">45</p>
+                                    </div>
+                                </div>
+                                <div class="best_sellers_purchase">
+                                    <button class="best_sellers_purchase-btn">COMPRE AGORA</button>
+                                </div>
+                            </div>
+                        </div> 
+                    </li>
+                    <li class="best_sellers_item">
+                        <div class="best_sellers_item_image">
+                            <img src="/assets/images/recommended_sweater.png" alt="Sueter Hugo Stackon - Preto" class="best_sellers_image">
+                            <div class="best_sellers_information">
+                                <p class="best_sellers_title">Sueter Hugo Stackon - Preto</p>
+                                <div class="best_sellers_prices">
+                                    <p class="best_sellers_new_price">R$ 1086,42</p>
+                                    <p class="best_sellers_old_price">R$ 1610,00</p>
+                                    <p class="best_sellers_installment_price">10x R$ 161,00</p>
+                                </div>
+                                <p class="best_sellers_other_information"><span>R$ 1003,09</span> no PIX</p>
+                                <p class="best_sellers_plus_information">+19 cores</p>
+                            </div>
+                            <div class="best_sellers_discount_favorite">
+                                <div class="best_sellers_discount">
+                                    <p class="best_sellers_discount_title" style="visibility: hidden;">LANÇAMENTO</p>
+                                    <p class="best_sellers_percentage" style="visibility: hidden;">30% de desconto</p>
+                                </div>
+                                <div class="best_sellers_favorite">
+                                    <i class="best_sellers_favorite-icon fa-regular fa-heart fa-xl" style="color: black;"></i>
+                                </div>
+                            </div>
+                            <div class="best_sellers_purchase_options">
+                                <div class="best_sellers_options">
+                                    <div class="best_sellers_ptions_container">
+                                        <p class="best_sellers_options-info">39</p>
+                                    </div>
+                                    <div class="best_sellers_ptions_container">
+                                        <p class="best_sellers_options-info">41</p>
+                                    </div>
+                                    <div class="best_sellers_ptions_container">
+                                        <p class="best_sellers_options-info">44</p>
+                                    </div>
+                                    <div class="best_sellers_ptions_container">
+                                        <p class="best_sellers_options-info">45</p>
+                                    </div>
+                                </div>
+                                <div class="best_sellers_purchase">
+                                    <button class="best_sellers_purchase-btn">COMPRE AGORA</button>
+                                </div>
+                            </div>
+                        </div> 
+                    </li>
+                    <li class="best_sellers_item">
+                        <div class="best_sellers_item_image">
+                            <img src="/assets/images/recommended_t_shirt.png" alt="Camisa Polo Hugo Deresino - Branco" class="best_sellers_image">
+                            <div class="best_sellers_information">
+                                <p class="best_sellers_title">Camisa Polo Hugo Deresino - Branco</p>
+                                <div class="best_sellers_prices">
+                                    <p class="best_sellers_new_price">R$ 593,82</p>
+                                    <p class="best_sellers_old_price">R$ 880,00</p>
+                                    <p class="best_sellers_installment_price">4x R$ 220,00</p>
+                                </div>
+                                <p class="best_sellers_other_information"><span>R$ 548,27</span> no PIX</p>
+                                <p class="best_sellers_plus_information">+19 cores</p>
+                            </div>
+                            <div class="best_sellers_discount_favorite">
+                                <div class="best_sellers_discount">
+                                    <p class="best_sellers_discount_title" style="visibility: hidden;">LANÇAMENTO</p>
+                                    <p class="best_sellers_percentage" style="visibility: hidden;">30% de desconto</p>
+                                </div>
+                                <div class="best_sellers_favorite">
+                                    <i class="best_sellers_favorite-icon fa-regular fa-heart fa-xl" style="color: black;"></i>
+                                </div>
+                            </div>
+                            <div class="best_sellers_purchase_options">
+                                <div class="best_sellers_options">
+                                    <div class="best_sellers_ptions_container">
+                                        <p class="best_sellers_options-info">39</p>
+                                    </div>
+                                    <div class="best_sellers_ptions_container">
+                                        <p class="best_sellers_options-info">41</p>
+                                    </div>
+                                    <div class="best_sellers_ptions_container">
+                                        <p class="best_sellers_options-info">44</p>
+                                    </div>
+                                    <div class="best_sellers_ptions_container">
+                                        <p class="best_sellers_options-info">45</p>
+                                    </div>
+                                </div>
+                                <div class="best_sellers_purchase">
+                                    <button class="best_sellers_purchase-btn">COMPRE AGORA</button>
+                                </div>
+                            </div>
+                        </div> 
+                    </li>
+                </ul>
+                <button class="best_sellers_slider-nav-next" onclick="nextSlideBestSellers()">&#10095;</button>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="sunglasses">
+            <div class="sunglasses_top">
+                <p class="sunglasses_top-title">Óculos</p>
+            </div>
+            <div class="sunglasses_slider_side-container">
+                <button class="sunglasses_slider-nav-prev" onclick="prevSlideSunglasses()">&#10094;</button>
+                <ul class="sunglasses_list">
+                    <li class="sunglasses_item">
+                        <div class="sunglasses_item_image">
+                            <img src="/assets/images/recommended_glasses.png" alt="Óculos escuros phillip plein" class="sunglasses_image">
+                            <div class="sunglasses_information">
+                                <p class="sunglasses_title">Óculos de sol Philipp Plein</p>
+                                <div class="sunglasses_prices">
+                                    <p class="sunglasses_new_price">R$ 2958,98</p>
+                                    <p class="sunglasses_old_price">R$ 4385,00</p>
+                                    <p class="sunglasses_installment_price">10x R$ 438,50</p>
+                                </div>
+                                <p class="sunglasses_other_information"><span>R$ 2732,00</span> no PIX</p>
+                                <p class="sunglasses_plus_information">+19 cores</p>
+                            </div>
+                            <div class="sunglasses_discount_favorite">
+                                <div class="sunglasses_discount">
+                                    <p class="sunglasses_discount_title" style="visibility: hidden;">LANÇAMENTO</p>
+                                    <p class="sunglasses_percentage" style="visibility: hidden;">30% de desconto</p>
+                                </div>
+                                <div class="sunglasses_favorite">
+                                    <i class="sunglasses_favorite-icon fa-regular fa-heart fa-xl" style="color: black;"></i>
+                                </div>
+                            </div>
+                            <div class="sunglasses_purchase_options">
+                                <div class="sunglasses_options">
+                                    <div class="sunglasses_ptions_container">
+                                        <p class="sunglasses_options-info">TU</p>
+                                    </div>
+                                </div>
+                                <div class="sunglasses_purchase">
+                                    <button class="sunglasses_purchase-btn">COMPRE AGORA</button>
+                                </div>
+                            </div>
+                        </div> 
+                    </li>
+                    <li class="sunglasses_item">
+                        <div class="sunglasses_item_image">
+                            <img src="/assets/images/sunglasses_vaiden_off_white.png" alt="Óculos De Sol Piloto Vaiden Off White - Dourado" class="sunglasses_image">
+                            <div class="sunglasses_information">
+                                <p class="sunglasses_title">Óculos de sol Vaiden Off White</p>
+                                <div class="sunglasses_prices">
+                                    <p class="sunglasses_new_price">R$ 1623,25</p>
+                                    <p class="sunglasses_old_price">R$ 2450,00</p>
+                                    <p class="sunglasses_installment_price">10x R$ 245,00</p>
+                                </div>
+                                <p class="sunglasses_other_information"><span>R$ 1526,44</span> no PIX</p>
+                                <p class="sunglasses_plus_information">+19 cores</p>
+                            </div>
+                            <div class="sunglasses_discount_favorite">
+                                <div class="sunglasses_discount">
+                                    <p class="sunglasses_discount_title" style="visibility: hidden;">LANÇAMENTO</p>
+                                    <p class="sunglasses_percentage" style="visibility: hidden;">30% de desconto</p>
+                                </div>
+                                <div class="sunglasses_favorite">
+                                    <i class="sunglasses_favorite-icon fa-regular fa-heart fa-xl" style="color: black;"></i>
+                                </div>
+                            </div>
+                            <div class="sunglasses_purchase_options">
+                                <div class="sunglasses_options">
+                                    <div class="sunglasses_ptions_container">
+                                        <p class="sunglasses_options-info">TU</p>
+                                    </div>
+                                </div>
+                                <div class="sunglasses_purchase">
+                                    <button class="sunglasses_purchase-btn">COMPRE AGORA</button>
+                                </div>
+                            </div>
+                        </div> 
+                    </li>
+                    <li class="sunglasses_item">
+                        <div class="sunglasses_item_image">
+                            <img src="/assets/images/sunglasses_philipp_plein_spp143.png" alt="Óculos De Sol Philipp Plein Spp143 - Preto/prata" class="sunglasses_image">
+                            <div class="sunglasses_information">
+                                <p class="sunglasses_title">Óculos de sol Philipp Plein Spp143</p>
+                                <div class="sunglasses_prices">
+                                    <p class="sunglasses_new_price">R$ 1504,80</p>
+                                    <p class="sunglasses_old_price">R$ 2230,00</p>
+                                    <p class="sunglasses_installment_price">6x R$ 371,67</p>
+                                </div>
+                                <p class="sunglasses_other_information"><span>R$ 1389,87</span> no PIX</p>
+                                <p class="sunglasses_plus_information">+19 cores</p>
+                            </div>
+                            <div class="sunglasses_discount_favorite">
+                                <div class="sunglasses_discount">
+                                    <p class="sunglasses_discount_title" style="visibility: hidden;">LANÇAMENTO</p>
+                                    <p class="sunglasses_percentage" style="visibility: hidden;">30% de desconto</p>
+                                </div>
+                                <div class="sunglasses_favorite">
+                                    <i class="sunglasses_favorite-icon fa-regular fa-heart fa-xl" style="color: black;"></i>
+                                </div>
+                            </div>
+                            <div class="sunglasses_purchase_options">
+                                <div class="sunglasses_options">
+                                    <div class="sunglasses_ptions_container">
+                                        <p class="sunglasses_options-info">TU</p>
+                                    </div>
+                                </div>
+                                <div class="sunglasses_purchase">
+                                    <button class="sunglasses_purchase-btn">COMPRE AGORA</button>
+                                </div>
+                            </div>
+                        </div> 
+                    </li>
+                    <li class="sunglasses_item">
+                        <div class="sunglasses_item_image">
+                            <img src="/assets/images/sunglasses_plein_sport_ssp001.png" alt="Óculos de Sol Plein Sport Ssp001 - Preto" class="sunglasses_image">
+                            <div class="sunglasses_information">
+                                <p class="sunglasses_title">Óculos de sol Plein Sport Ssp001</p>
+                                <div class="sunglasses_prices">
+                                    <p class="sunglasses_new_price">R$ 1187,64</p>
+                                    <p class="sunglasses_old_price">R$ 1760,00</p>
+                                    <p class="sunglasses_installment_price">4x R$ 440,00</p>
+                                </div>
+                                <p class="sunglasses_other_information"><span>R$ 1096,54</span> no PIX</p>
+                                <p class="sunglasses_plus_information">+19 cores</p>
+                            </div>
+                            <div class="sunglasses_discount_favorite">
+                                <div class="sunglasses_discount">
+                                    <p class="sunglasses_discount_title" style="visibility: hidden;">LANÇAMENTO</p>
+                                    <p class="sunglasses_percentage" style="visibility: hidden;">30% de desconto</p>
+                                </div>
+                                <div class="sunglasses_favorite">
+                                    <i class="sunglasses_favorite-icon fa-regular fa-heart fa-xl" style="color: black;"></i>
+                                </div>
+                            </div>
+                            <div class="sunglasses_purchase_options">
+                                <div class="sunglasses_options">
+                                    <div class="sunglasses_ptions_container">
+                                        <p class="sunglasses_options-info">TU</p>
+                                    </div>
+                                </div>
+                                <div class="sunglasses_purchase">
+                                    <button class="sunglasses_purchase-btn">COMPRE AGORA</button>
+                                </div>
+                            </div>
+                        </div> 
+                    </li>
+                    <li class="sunglasses_item">
+                        <div class="sunglasses_item_image">
+                            <img src="/assets/images/sunglasses_philipp_plein_spp047.png" alt="Óculos de Sol Philipp Plein Spp047 - Preto" class="sunglasses_image">
+                            <div class="sunglasses_information">
+                                <p class="sunglasses_title">Óculos de sol Philipp Plein Spp047</p>
+                                <div class="sunglasses_prices">
+                                    <p class="sunglasses_new_price">R$ 3974,55</p>
+                                    <p class="sunglasses_old_price">R$ 5890,00</p>
+                                    <p class="sunglasses_installment_price">12x R$ 490,83</p>
+                                </div>
+                                <p class="sunglasses_other_information"><span>R$ 3669,68</span> no PIX</p>
+                                <p class="sunglasses_plus_information">+19 cores</p>
+                            </div>
+                            <div class="sunglasses_discount_favorite">
+                                <div class="sunglasses_discount">
+                                    <p class="sunglasses_discount_title" style="visibility: hidden;">LANÇAMENTO</p>
+                                    <p class="sunglasses_percentage" style="visibility: hidden;">30% de desconto</p>
+                                </div>
+                                <div class="sunglasses_favorite">
+                                    <i class="sunglasses_favorite-icon fa-regular fa-heart fa-xl" style="color: black;"></i>
+                                </div>
+                            </div>
+                            <div class="sunglasses_purchase_options">
+                                <div class="sunglasses_options">
+                                    <div class="sunglasses_ptions_container">
+                                        <p class="sunglasses_options-info">TU</p>
+                                    </div>
+                                </div>
+                                <div class="sunglasses_purchase">
+                                    <button class="sunglasses_purchase-btn">COMPRE AGORA</button>
+                                </div>
+                            </div>
+                        </div> 
+                    </li>
+                    <li class="sunglasses_item">
+                        <div class="sunglasses_item_image">
+                            <img src="/assets/images/sunglasses_off_white_manchester_oeri_002.png" alt="Óculos de Sol Off-white Manchester Oeri002 Azul" class="sunglasses_image">
+                            <div class="sunglasses_information">
+                                <p class="sunglasses_title">Óculos de Sol Off-white Manchester</p>
+                                <div class="sunglasses_prices">
+                                    <p class="sunglasses_new_price">R$ 1150,53</p>
+                                    <p class="sunglasses_old_price">R$ 1705,00</p>
+                                    <p class="sunglasses_installment_price">12x R$ 142,08</p>
+                                </div>
+                                <p class="sunglasses_other_information"><span>R$ 1062,27</span> no PIX</p>
+                                <p class="sunglasses_plus_information">+19 cores</p>
+                            </div>
+                            <div class="sunglasses_discount_favorite">
+                                <div class="sunglasses_discount">
+                                    <p class="sunglasses_discount_title" style="visibility: hidden;">LANÇAMENTO</p>
+                                    <p class="sunglasses_percentage" style="visibility: hidden;">30% de desconto</p>
+                                </div>
+                                <div class="sunglasses_favorite">
+                                    <i class="sunglasses_favorite-icon fa-regular fa-heart fa-xl" style="color: black;"></i>
+                                </div>
+                            </div>
+                            <div class="sunglasses_purchase_options">
+                                <div class="sunglasses_options">
+                                    <div class="sunglasses_ptions_container">
+                                        <p class="sunglasses_options-info">TU</p>
+                                    </div>
+                                </div>
+                                <div class="sunglasses_purchase">
+                                    <button class="sunglasses_purchase-btn">COMPRE AGORA</button>
+                                </div>
+                            </div>
+                        </div> 
+                    </li>
+                </ul>
+                <button class="sunglasses_slider-nav-next" onclick="nextSlideSunglasses()">&#10095;</button>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="fragrance">
+            <div class="fragrance_top">
+                <p class="fragrance_top-title">Perfumes</p>
+            </div>
+            <div class="fragrance_slider_side-container">
+                <button class="fragrance_slider-nav-prev" onclick="prevSlideFragrance()">&#10094;</button>
+                <ul class="fragrance_list">
+                    <li class="fragrance_item">
+                        <div class="fragrance_item_image">
+                            <img src="/assets/images/perfume_good_girl_carolina_herrera.png" alt="Perfume Goog Girl Carolina Herrera" class="fragrance_image">
+                            <div class="fragrance_information">
+                                <p class="fragrance_title">Perfume Goog Girl Carolina Herrera</p>
+                                <div class="fragrance_prices">
+                                    <p class="fragrance_new_price">R$ 465,61</p>
+                                    <p class="fragrance_old_price">R$ 690,00</p>
+                                    <p class="fragrance_installment_price">3x R$ 230,00</p>
+                                </div>
+                                <p class="fragrance_other_information"><span>R$ 429,89</span> no PIX</p>
+                                <p class="fragrance_plus_information">+19 cores</p>
+                            </div>
+                            <div class="fragrance_discount_favorite">
+                                <div class="fragrance_discount">
+                                    <p class="fragrance_discount_title" style="visibility: hidden;">LANÇAMENTO</p>
+                                    <p class="fragrance_percentage" style="visibility: hidden;">30% de desconto</p>
+                                </div>
+                                <div class="fragrance_favorite">
+                                    <i class="fragrance_favorite-icon fa-regular fa-heart fa-xl" style="color: black;"></i>
+                                </div>
+                            </div>
+                            <div class="fragrance_purchase_options">
+                                <div class="fragrance_options">
+                                    <div class="fragrance_ptions_container">
+                                        <p class="fragrance_options-info">TU</p>
+                                    </div>
+                                </div>
+                                <div class="fragrance_purchase">
+                                    <button class="fragrance_purchase-btn">COMPRE AGORA</button>
+                                </div>
+                            </div>
+                        </div> 
+                    </li>
+                    <li class="fragrance_item">
+                        <div class="fragrance_item_image">
+                            <img src="/assets/images/perfume_linterdit_givenchy.png" alt="Perfume linterdit Givenchy 80 ml" class="fragrance_image">
+                            <div class="fragrance_information">
+                                <p class="fragrance_title">Perfume linterdit Givenchy 80 ml</p>
+                                <div class="fragrance_prices">
+                                    <p class="fragrance_new_price">R$ 356,49</p>
+                                    <p class="fragrance_old_price">R$ 528,30</p>
+                                    <p class="fragrance_installment_price">4x R$ 132,08</p>
+                                </div>
+                                <p class="fragrance_other_information"><span>R$ 329,15</span> no PIX</p>
+                                <p class="fragrance_plus_information">+19 cores</p>
+                            </div>
+                            <div class="fragrance_discount_favorite">
+                                <div class="fragrance_discount">
+                                    <p class="fragrance_discount_title" style="visibility: hidden;">LANÇAMENTO</p>
+                                    <p class="fragrance_percentage" style="visibility: hidden;">30% de desconto</p>
+                                </div>
+                                <div class="fragrance_favorite">
+                                    <i class="fragrance_favorite-icon fa-regular fa-heart fa-xl" style="color: black;"></i>
+                                </div>
+                            </div>
+                            <div class="fragrance_purchase_options">
+                                <div class="fragrance_options">
+                                    <div class="fragrance_ptions_container">
+                                        <p class="fragrance_options-info">TU</p>
+                                    </div>
+                                </div>
+                                <div class="fragrance_purchase">
+                                    <button class="fragrance_purchase-btn">COMPRE AGORA</button>
+                                </div>
+                            </div>
+                        </div> 
+                    </li>
+                    <li class="fragrance_item">
+                        <div class="fragrance_item_image">
+                            <img src="/assets/images/perfume_dolce_gabbana_light_blue.png" alt="Perfume Dolce e Gabbana Light Blue" class="fragrance_image">
+                            <div class="fragrance_information">
+                                <p class="fragrance_title">Perfume Dolce e Gabbana Light Blue</p>
+                                <div class="fragrance_prices">
+                                    <p class="fragrance_new_price">R$ 471,68</p>
+                                    <p class="fragrance_old_price">R$ 699,00</p>
+                                    <p class="fragrance_installment_price">3x R$ 233,00</p>
+                                </div>
+                                <p class="fragrance_other_information"><span>R$ 435,50</span> no PIX</p>
+                                <p class="fragrance_plus_information">+19 cores</p>
+                            </div>
+                            <div class="fragrance_discount_favorite">
+                                <div class="fragrance_discount">
+                                    <p class="fragrance_discount_title" style="visibility: hidden;">LANÇAMENTO</p>
+                                    <p class="fragrance_percentage" style="visibility: hidden;">30% de desconto</p>
+                                </div>
+                                <div class="fragrance_favorite">
+                                    <i class="fragrance_favorite-icon fa-regular fa-heart fa-xl" style="color: black;"></i>
+                                </div>
+                            </div>
+                            <div class="fragrance_purchase_options">
+                                <div class="fragrance_options">
+                                    <div class="fragrance_ptions_container">
+                                        <p class="fragrance_options-info">TU</p>
+                                    </div>
+                                </div>
+                                <div class="fragrance_purchase">
+                                    <button class="fragrance_purchase-btn">COMPRE AGORA</button>
+                                </div>
+                            </div>
+                        </div> 
+                    </li>
+                    <li class="fragrance_item">
+                        <div class="fragrance_item_image">
+                            <img src="/assets/images/perfume_gentleman_society_gicenchy.png" alt="Perfume Gentleman Society Givenchy" class="fragrance_image">
+                            <div class="fragrance_information">
+                                <p class="fragrance_title">Perfume Gentleman Society Givenchy</p>
+                                <div class="fragrance_prices">
+                                    <p class="fragrance_new_price">R$ 358,99</p>
+                                    <p class="fragrance_old_price">R$ 532,00</p>
+                                    <p class="fragrance_installment_price">2x R$ 266,00</p>
+                                </div>
+                                <p class="fragrance_other_information"><span>R$ 331,45</span> no PIX</p>
+                                <p class="fragrance_plus_information">+19 cores</p>
+                            </div>
+                            <div class="fragrance_discount_favorite">
+                                <div class="fragrance_discount">
+                                    <p class="fragrance_discount_title" style="visibility: hidden;">LANÇAMENTO</p>
+                                    <p class="fragrance_percentage" style="visibility: hidden;">30% de desconto</p>
+                                </div>
+                                <div class="fragrance_favorite">
+                                    <i class="fragrance_favorite-icon fa-regular fa-heart fa-xl" style="color: black;"></i>
+                                </div>
+                            </div>
+                            <div class="fragrance_purchase_options">
+                                <div class="fragrance_options">
+                                    <div class="fragrance_ptions_container">
+                                        <p class="fragrance_options-info">TU</p>
+                                    </div>
+                                </div>
+                                <div class="fragrance_purchase">
+                                    <button class="fragrance_purchase-btn">COMPRE AGORA</button>
+                                </div>
+                            </div>
+                        </div> 
+                    </li>
+                    <li class="fragrance_item">
+                        <div class="fragrance_item_image">
+                            <img src="/assets/images/perfume_good_girl_carolina_herrera.png" alt="Perfume Goog Girl Carolina Herrera" class="fragrance_image">
+                            <div class="fragrance_information">
+                                <p class="fragrance_title">Perfume Goog Girl Carolina Herrera</p>
+                                <div class="fragrance_prices">
+                                    <p class="fragrance_new_price">R$ 465,61</p>
+                                    <p class="fragrance_old_price">R$ 690,00</p>
+                                    <p class="fragrance_installment_price">3x R$ 230,00</p>
+                                </div>
+                                <p class="fragrance_other_information"><span>R$ 429,89</span> no PIX</p>
+                                <p class="fragrance_plus_information">+19 cores</p>
+                            </div>
+                            <div class="fragrance_discount_favorite">
+                                <div class="fragrance_discount">
+                                    <p class="fragrance_discount_title" style="visibility: hidden;">LANÇAMENTO</p>
+                                    <p class="fragrance_percentage" style="visibility: hidden;">30% de desconto</p>
+                                </div>
+                                <div class="fragrance_favorite">
+                                    <i class="fragrance_favorite-icon fa-regular fa-heart fa-xl" style="color: black;"></i>
+                                </div>
+                            </div>
+                            <div class="fragrance_purchase_options">
+                                <div class="fragrance_options">
+                                    <div class="fragrance_ptions_container">
+                                        <p class="fragrance_options-info">TU</p>
+                                    </div>
+                                </div>
+                                <div class="fragrance_purchase">
+                                    <button class="fragrance_purchase-btn">COMPRE AGORA</button>
+                                </div>
+                            </div>
+                        </div> 
+                    </li>
+                    <li class="fragrance_item">
+                        <div class="fragrance_item_image">
+                            <img src="/assets/images/perfume_dolce_gabbana_light_blue.png" alt="Perfume Dolce e Gabbana Light Blue" class="fragrance_image">
+                            <div class="fragrance_information">
+                                <p class="fragrance_title">Perfume Dolce e Gabbana Light Blue</p>
+                                <div class="fragrance_prices">
+                                    <p class="fragrance_new_price">R$ 471,68</p>
+                                    <p class="fragrance_old_price">R$ 699,00</p>
+                                    <p class="fragrance_installment_price">3x R$ 233,00</p>
+                                </div>
+                                <p class="fragrance_other_information"><span>R$ 435,50</span> no PIX</p>
+                                <p class="fragrance_plus_information">+19 cores</p>
+                            </div>
+                            <div class="fragrance_discount_favorite">
+                                <div class="fragrance_discount">
+                                    <p class="fragrance_discount_title" style="visibility: hidden;">LANÇAMENTO</p>
+                                    <p class="fragrance_percentage" style="visibility: hidden;">30% de desconto</p>
+                                </div>
+                                <div class="fragrance_favorite">
+                                    <i class="fragrance_favorite-icon fa-regular fa-heart fa-xl" style="color: black;"></i>
+                                </div>
+                            </div>
+                            <div class="fragrance_purchase_options">
+                                <div class="fragrance_options">
+                                    <div class="fragrance_ptions_container">
+                                        <p class="fragrance_options-info">TU</p>
+                                    </div>
+                                </div>
+                                <div class="fragrance_purchase">
+                                    <button class="fragrance_purchase-btn">COMPRE AGORA</button>
+                                </div>
+                            </div>
+                        </div> 
+                    </li>
+                </ul>
+                <button class="fragrance_slider-nav-next" onclick="nextSlideFragrance()">&#10095;</button>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="accessories">
+            <div class="accessories_top">
+                <div class="accessories_top_title_container">
+                    <p class="accessories_top-title">Acessórios para completar o look</p>
+                </div>
+            </div>
+            <div class="accessories_slider_side-container">
+                <button class="accessories_slider-nav-prev" onclick="prevSlideAccessories()">&#10094;</button>
+                <ul class="accessories_list">
+                    <li class="accessories_item">
+                        <div class="accessories_item_image">
+                            <img src="/assets/images/accessories_bolsa_off_white.png" alt="Bolsa Off White - Branco/Preto" class="accessories_image">
+                            <div class="accessories_information">
+                                <p class="accessories_title">Bolsa Off White - Branco/Preto</p>
+                                <div class="accessories_prices">
+                                    <p class="accessories_new_price">R$ 4723,57</p>
+                                    <p class="accessories_old_price">R$ 7000,00</p>
+                                    <p class="accessories_installment_price">12x R$ 583,33</p>
+                                </div>
+                                <p class="accessories_other_information"><span>R$ 4361,25</span> no PIX</p>
+                                <p class="accessories_plus_information">+19 cores</p>
+                            </div>
+                            <div class="accessories_discount_favorite">
+                                <div class="accessories_discount">
+                                    <p class="accessories_discount_title" style="visibility: hidden;">LANÇAMENTO</p>
+                                    <p class="accessories_percentage" style="visibility: hidden;">30% de desconto</p>
+                                </div>
+                                <div class="accessories_favorite">
+                                    <i class="accessories_favorite-icon fa-regular fa-heart fa-xl" style="color: black;"></i>
+                                </div>
+                            </div>
+                            <div class="accessories_purchase_options">
+                                <div class="accessories_options">
+                                    <div class="accessories_ptions_container">
+                                        <p class="accessories_options-info">TU</p>
+                                    </div>
+                                </div>
+                                <div class="accessories_purchase">
+                                    <button class="accessories_purchase-btn">COMPRE AGORA</button>
+                                </div>
+                            </div>
+                        </div> 
+                    </li>
+                    <li class="accessories_item">
+                        <div class="accessories_item_image">
+                            <img src="/assets/images/accessories_bolsa_carteiro.png" alt="Bolsa Carteiro Moschino - Preto" class="accessories_image">
+                            <div class="accessories_information">
+                                <p class="accessories_title">Bolsa Carteiro Moschino - Preto</p>
+                                <div class="accessories_prices">
+                                    <p class="accessories_new_price">R$ 3613,53</p>
+                                    <p class="accessories_old_price">R$ 5355,00</p>
+                                    <p class="accessories_installment_price">8x R$ 669,38</p>
+                                </div>
+                                <p class="accessories_other_information"><span>R$ 3336,35</span> no PIX</p>
+                                <p class="accessories_plus_information">+19 cores</p>
+                            </div>
+                            <div class="accessories_discount_favorite">
+                                <div class="accessories_discount">
+                                    <p class="accessories_discount_title" style="visibility: hidden;">LANÇAMENTO</p>
+                                    <p class="accessories_percentage" style="visibility: hidden;">30% de desconto</p>
+                                </div>
+                                <div class="accessories_favorite">
+                                    <i class="accessories_favorite-icon fa-regular fa-heart fa-xl" style="color: black;"></i>
+                                </div>
+                            </div>
+                            <div class="accessories_purchase_options">
+                                <div class="accessories_options">
+                                    <div class="accessories_ptions_container">
+                                        <p class="accessories_options-info">TU</p>
+                                    </div>
+                                </div>
+                                <div class="accessories_purchase">
+                                    <button class="accessories_purchase-btn">COMPRE AGORA</button>
+                                </div>
+                            </div>
+                        </div> 
+                    </li>
+                    <li class="accessories_item">
+                        <div class="accessories_item_image">
+                            <img src="/assets/images/accessories_bolsa_carteiro_letreiro.png" alt="Bolsa Carteiro Moschino com letreiro- Preto" class="accessories_image">
+                            <div class="accessories_information">
+                                <p class="accessories_title">Bolsa Carteiro Moschino com letreiro</p>
+                                <div class="accessories_prices">
+                                    <p class="accessories_new_price">R$ 4622,35</p>
+                                    <p class="accessories_old_price">R$ 6850,00</p>
+                                    <p class="accessories_installment_price">6x R$ 1141,67</p>
+                                </div>
+                                <p class="accessories_other_information"><span>R$ 4267,79</span> no PIX</p>
+                                <p class="accessories_plus_information">+19 cores</p>
+                            </div>
+                            <div class="accessories_discount_favorite">
+                                <div class="accessories_discount">
+                                    <p class="accessories_discount_title" style="visibility: hidden;">LANÇAMENTO</p>
+                                    <p class="accessories_percentage" style="visibility: hidden;">30% de desconto</p>
+                                </div>
+                                <div class="accessories_favorite">
+                                    <i class="accessories_favorite-icon fa-regular fa-heart fa-xl" style="color: black;"></i>
+                                </div>
+                            </div>
+                            <div class="accessories_purchase_options">
+                                <div class="accessories_options">
+                                    <div class="accessories_ptions_container">
+                                        <p class="accessories_options-info">TU</p>
+                                    </div>
+                                </div>
+                                <div class="accessories_purchase">
+                                    <button class="accessories_purchase-btn">COMPRE AGORA</button>
+                                </div>
+                            </div>
+                        </div> 
+                    </li>
+                    <li class="accessories_item">
+                        <div class="accessories_item_image">
+                            <img src="/assets/images/accessories_bolsa_tira_colo_ziper.png" alt="Bolsa tira colo Moschino com ziper" class="accessories_image">
+                            <div class="accessories_information">
+                                <p class="accessories_title">Bolsa tira colo Moschino com ziper</p>
+                                <div class="accessories_prices">
+                                    <p class="accessories_new_price">R$ 3145,22</p>
+                                    <p class="accessories_old_price">R$ 4661,00</p>
+                                    <p class="accessories_installment_price">6x R$ 776,83</p>
+                                </div>
+                                <p class="accessories_other_information"><span>R$ 2903,97</span> no PIX</p>
+                                <p class="accessories_plus_information">+19 cores</p>
+                            </div>
+                            <div class="accessories_discount_favorite">
+                                <div class="accessories_discount">
+                                    <p class="accessories_discount_title" style="visibility: hidden;">LANÇAMENTO</p>
+                                    <p class="accessories_percentage" style="visibility: hidden;">30% de desconto</p>
+                                </div>
+                                <div class="accessories_favorite">
+                                    <i class="accessories_favorite-icon fa-regular fa-heart fa-xl" style="color: black;"></i>
+                                </div>
+                            </div>
+                            <div class="accessories_purchase_options">
+                                <div class="accessories_options">
+                                    <div class="accessories_ptions_container">
+                                        <p class="accessories_options-info">TU</p>
+                                    </div>
+                                </div>
+                                <div class="accessories_purchase">
+                                    <button class="accessories_purchase-btn">COMPRE AGORA</button>
+                                </div>
+                            </div>
+                        </div> 
+                    </li>
+                    <li class="accessories_item">
+                        <div class="accessories_item_image">
+                            <img src="/assets/images/accessories_bolsa_de_ombro_logo.png" alt="Bolsa de ombro com logo - Preto" class="accessories_image">
+                            <div class="accessories_information">
+                                <p class="accessories_title">Bolsa de ombro com logo - Preto</p>
+                                <div class="accessories_prices">
+                                    <p class="accessories_new_price">R$ 3593,29</p>
+                                    <p class="accessories_old_price">R$ 5325,00</p>
+                                    <p class="accessories_installment_price">6x R$ 887,50</p>
+                                </div>
+                                <p class="accessories_other_information"><span>R$ 3317,66</span> no PIX</p>
+                                <p class="accessories_plus_information">+19 cores</p>
+                            </div>
+                            <div class="accessories_discount_favorite">
+                                <div class="accessories_discount">
+                                    <p class="accessories_discount_title" style="visibility: hidden;">LANÇAMENTO</p>
+                                    <p class="accessories_percentage" style="visibility: hidden;">30% de desconto</p>
+                                </div>
+                                <div class="accessories_favorite">
+                                    <i class="accessories_favorite-icon fa-regular fa-heart fa-xl" style="color: black;"></i>
+                                </div>
+                            </div>
+                            <div class="accessories_purchase_options">
+                                <div class="accessories_options">
+                                    <div class="accessories_ptions_container">
+                                        <p class="accessories_options-info">TU</p>
+                                    </div>
+                                </div>
+                                <div class="accessories_purchase">
+                                    <button class="accessories_purchase-btn">COMPRE AGORA</button>
+                                </div>
+                            </div>
+                        </div> 
+                    </li>
+                    <li class="accessories_item">
+                        <div class="accessories_item_image">
+                            <img src="/assets/images/perfume_linterdit_givenchy.png" alt="Givenchy L'interdit Rouge 80ml" class="accessories_image">
+                            <div class="accessories_information">
+                                <p class="accessories_title">Givenchy L'interdit Rouge 80ml</p>
+                                <div class="accessories_prices">
+                                    <p class="accessories_new_price">R$ 356,49</p>
+                                    <p class="accessories_old_price">R$ 528,30</p>
+                                    <p class="accessories_installment_price">4x R$ 132,08</p>
+                                </div>
+                                <p class="accessories_other_information"><span>R$ 329,15</span> no PIX</p>
+                                <p class="accessories_plus_information">+19 cores</p>
+                            </div>
+                            <div class="accessories_discount_favorite">
+                                <div class="accessories_discount">
+                                    <p class="accessories_discount_title" style="visibility: hidden;">LANÇAMENTO</p>
+                                    <p class="accessories_percentage" style="visibility: hidden;">30% de desconto</p>
+                                </div>
+                                <div class="accessories_favorite">
+                                    <i class="accessories_favorite-icon fa-regular fa-heart fa-xl" style="color: black;"></i>
+                                </div>
+                            </div>
+                            <div class="accessories_purchase_options">
+                                <div class="accessories_options">
+                                    <div class="accessories_ptions_container">
+                                        <p class="accessories_options-info">TU</p>
+                                    </div>
+                                </div>
+                                <div class="accessories_purchase">
+                                    <button class="accessories_purchase-btn">COMPRE AGORA</button>
+                                </div>
+                            </div>
+                        </div> 
+                    </li>
+                    
+                </ul>
+                <button class="accessories_slider-nav-next" onclick="nextSlideAccessories()">&#10095;</button>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="client_feedback">
+            <div class="client_feedback_top">
+                <h2 class="client_feedback_top-primary-title">Quem usa, recomenda!</h2>
+                <p class="client_feedback_top-secondary-title">Veja as nossas avaliações</p>
+            </div>
+            <div class="client_feedback_slider_side-container">
+                <ul class="client_feedback_list">
+                    <li class="client_feedback_item">
+                        <div class="client_feedback_container">
+                            <div class="client_feedback_star">
+                                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                <i class="fa-regular fa-star" style="color: #FFD43B;"></i>
+                                <i class="fa-regular fa-star" style="color: #FFD43B;"></i>
+                            </div>
+                            <div class="client_feedback_user">
+                                <p class="client_feedback_complete_name">Diego Medeiros</p>
+                                <p class="client_feedback_message">O produto chegou no prazo e as roupas são de qualidade incríveis como eu imaginava, são iguais as das fotos do site.</p>
+                            </div>
+                        </div> 
+                    </li>
+                    <li class="client_feedback_item">
+                        <div class="client_feedback_container">
+                            <div class="client_feedback_star">
+                                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                <i class="fa-regular fa-star" style="color: #FFD43B;"></i>
+                                <i class="fa-regular fa-star" style="color: #FFD43B;"></i>
+                            </div>
+                            <div class="client_feedback_user">
+                                <p class="client_feedback_complete_name">Luciano Santos</p>
+                                <p class="client_feedback_message">Top o perfume que colocam nas roupas, produto excelente!</p>
+                            </div>
+                        </div> 
+                    </li>
+                    <li class="client_feedback_item">
+                        <div class="client_feedback_container">
+                            <div class="client_feedback_star">
+                                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                <i class="fa-regular fa-star" style="color: #FFD43B;"></i>
+                                <i class="fa-regular fa-star" style="color: #FFD43B;"></i>
+                            </div>
+                            <div class="client_feedback_user">
+                                <p class="client_feedback_complete_name">Caroline Nunes</p>
+                                <p class="client_feedback_message">Muito bom os produtos, chegaram direitinho dentro do prazo</p>
+                            </div>
+                        </div> 
+                    </li>
+                    <li class="client_feedback_item">
+                        <div class="client_feedback_container">
+                            <div class="client_feedback_star">
+                                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                <i class="fa-regular fa-star" style="color: #FFD43B;"></i>
+                                <i class="fa-regular fa-star" style="color: #FFD43B;"></i>
+                            </div>
+                            <div class="client_feedback_user">
+                                <p class="client_feedback_complete_name">Maria Aparecida</p>
+                                <p class="client_feedback_message">Produtos de ótima qualidade, vale muito a pena e preços dentro da realidade. Vou comprar mais vezes!</p>
+                            </div>
+                        </div> 
+                    </li>
+                    <li class="client_feedback_item">
+                        <div class="client_feedback_container">
+                            <div class="client_feedback_star">
+                                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                <i class="fa-regular fa-star" style="color: #FFD43B;"></i>
+                                <i class="fa-regular fa-star" style="color: #FFD43B;"></i>
+                            </div>
+                            <div class="client_feedback_user">
+                                <p class="client_feedback_complete_name">Marcelo da Silva</p>
+                                <p class="client_feedback_message">Fiz uma compra para testar e chegou certinho a minha compra, ja comprei outras vezes os produtos deles, são muito bons chegam certo e dentro do prazo de previsão de entrega e vale muito a pena comprar com eles.</p>
+                            </div>
+                        </div> 
+                    </li>
+                    <li class="client_feedback_item">
+                        <div class="client_feedback_container">
+                            <div class="client_feedback_star">
+                                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                <i class="fa-regular fa-star" style="color: #FFD43B;"></i>
+                                <i class="fa-regular fa-star" style="color: #FFD43B;"></i>
+                            </div>
+                            <div class="client_feedback_user">
+                                <p class="client_feedback_complete_name">Cleide Conceição</p>
+                                <p class="client_feedback_message">Ótimos produtos, muito bons, continuarei a comprar com eles.</p>
+                            </div>
+                        </div> 
+                    </li>
+                    <li class="client_feedback_item">
+                        <div class="client_feedback_container">
+                            <div class="client_feedback_star">
+                                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                <i class="fa-regular fa-star" style="color: #FFD43B;"></i>
+                                <i class="fa-regular fa-star" style="color: #FFD43B;"></i>
+                            </div>
+                            <div class="client_feedback_user">
+                                <p class="client_feedback_complete_name">Tainá Alcantara</p>
+                                <p class="client_feedback_message">Gostei de comprar com eles, adorei as bolsas vou comprar mais!</p>
+                            </div>
+                        </div> 
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+
+    <script src="/assets/js/code.js"></script>
+    <!-- Importação do Font Awesome Free JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/js/all.min.js"></script>
+
+</body>
+</html>
