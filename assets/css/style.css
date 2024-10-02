@@ -882,7 +882,7 @@ html {
     padding: 15px;
     background-image: url(../images/monkey_white.svg);
     background-repeat: no-repeat;
-    background-size: max(50%, 150px) max(50%, 150px); 
+    background-size: contain; 
     background-position: left bottom;
     width: 50%;
     height: 100% !important;
