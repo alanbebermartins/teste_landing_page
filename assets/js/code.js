@@ -333,6 +333,38 @@ window.onload = () => {
 
 // /* --------------------------- SECÇÃO DE FEEDBACK DE CLIENTES --------------------------- */
 
+document.addEventListener("DOMContentLoaded", function() {
+  const sliderContainer = document.querySelector(".client_feedback_list");
+  const items = document.querySelectorAll(".client_feedback_item");
+  const itemCount = items.length;
+  let currentIndex = 0;
+  const slideWidth = items[0].clientWidth;
+  
+  function moveSlider() {
+      // Atualiza o índice do slide atual
+      currentIndex++;
+      
+      // Reseta o índice se chegar ao final
+      if (currentIndex >= itemCount) {
+          currentIndex = 0;
+      }
+      
+      // Move o container do slider
+      sliderContainer.style.transform = `translateX(-${slideWidth * currentIndex}px)`;
+  }
+
+  // Configura o intervalo para mover o slider a cada 3 segundos
+  setInterval(moveSlider, 3000);
+
+  // Ajusta o comportamento ao redimensionar a janela
+  window.addEventListener("resize", () => {
+      const newSlideWidth = items[0].clientWidth;
+      sliderContainer.style.transform = `translateX(-${newSlideWidth * currentIndex}px)`;
+  });
+});
+
+// /* --------------------------- SECÇÃO DE CONTATO --------------------------- */
+
 const newsletterForm = document.getElementById('newsletterForm');
 const inputCompleteName = document.getElementById('newsletterCompleteName');
 const errorMessageCompleteName = document.getElementById('newsletterErrorMessageCompleteName');

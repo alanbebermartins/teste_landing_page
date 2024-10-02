@@ -1845,7 +1845,7 @@ html {
 
 .client_feedback_item {
     list-style-type: none;
-    flex: 0 0 100%; /* Cada item começa ocupando 100% para telas menores */
+    
 }
 
 .client_feedback_star {
