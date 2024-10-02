@@ -428,3 +428,80 @@ subscribeButtom.addEventListener('click', (event) => {
   }
 });
 
+// /* --------------------------- SECÇÃO DE CONTATO FOOTER --------------------------- */
+/*
+const arrowUpContent1 = document.getElementById('arrow_up_icon-content-1'); // Acesso direto ao icone de ARROU UP referente a div com atributo onclick="toggleContent('content1')
+const arrowDownContent1 = document.getElementById('arrow_down_icon-content-1'); // Acesso direto ao icone de ARROU DOWN referente a div com atributo onclick="toggleContent('content1')
+
+const arrowUpContent2 = document.getElementById('arrow_up_icon-content-2'); // Acesso direto ao icone de ARROU UP referente a div com atributo onclick="toggleContent('content2')
+const arrowDownContent2 = document.getElementById('arrow_down_icon-content-2'); // Acesso direto ao icone de ARROU DOWN referente a div com atributo onclick="toggleContent('content2')
+
+const arrowUpContent3 = document.getElementById('arrow_up_icon-content-3'); // Acesso direto ao icone de ARROU UP referente a div com atributo onclick="toggleContent('content3')
+const arrowDownContent3 = document.getElementById('arrow_down_icon-content-3'); // Acesso direto ao icone de ARROU DOWN referente a div com atributo onclick="toggleContent('content3')
+
+const arrowUpContent4 = document.getElementById('arrow_up_icon-content-4'); // Acesso direto ao icone de ARROU UP referente a div com atributo onclick="toggleContent('content4')
+const arrowDownContent4 = document.getElementById('arrow_down_icon-content-4'); // Acesso direto ao icone de ARROU DOWN referente a div com atributo onclick="toggleContent('content4')
+
+*/
+// function toggleContent(contentId) {
+//   const content = document.getElementById(contentId);
+//   console.log("RETORNO = " + content);
+//   if (content.style.display === "block") {
+//       content.style.display = "none";
+//   } else {
+//       content.style.display = "block";
+//   }
+// }
+
+function toggleContent(contentId) {
+  const content = document.getElementById(contentId);
+  
+  // Acessos diretos aos ícones
+  const arrowUpContent1 = document.getElementById('arrow_up_icon-content-1');
+  const arrowDownContent1 = document.getElementById('arrow_down_icon-content-1');
+  
+  const arrowUpContent2 = document.getElementById('arrow_up_icon-content-2');
+  const arrowDownContent2 = document.getElementById('arrow_down_icon-content-2');
+
+  const arrowUpContent3 = document.getElementById('arrow_up_icon-content-3');
+  const arrowDownContent3 = document.getElementById('arrow_down_icon-content-3');
+
+  const arrowUpContent4 = document.getElementById('arrow_up_icon-content-4');
+  const arrowDownContent4 = document.getElementById('arrow_down_icon-content-4');
+
+  // Esconder ou mostrar o conteúdo e os ícones
+  if (content.style.display === "block") {
+      content.style.display = "none";
+      // Esconde os ícones de seta
+      if (contentId === 'content1') {
+          arrowUpContent1.style.display = "none";
+          arrowDownContent1.style.display = "inline";
+      } else if (contentId === 'content2') {
+          arrowUpContent2.style.display = "none";
+          arrowDownContent2.style.display = "inline";
+      } else if (contentId === 'content3') {
+          arrowUpContent3.style.display = "none";
+          arrowDownContent3.style.display = "inline";
+      } else if (contentId === 'content4') {
+          arrowUpContent4.style.display = "none";
+          arrowDownContent4.style.display = "inline";
+      }
+  } else {
+      content.style.display = "block";
+      // Mostra os ícones de seta
+      if (contentId === 'content1') {
+          arrowUpContent1.style.display = "inline";
+          arrowDownContent1.style.display = "none";
+      } else if (contentId === 'content2') {
+          arrowUpContent2.style.display = "inline";
+          arrowDownContent2.style.display = "none";
+      } else if (contentId === 'content3') {
+          arrowUpContent3.style.display = "inline";
+          arrowDownContent3.style.display = "none";
+      } else if (contentId === 'content4') {
+          arrowUpContent4.style.display = "inline";
+          arrowDownContent4.style.display = "none";
+      }
+  }
+}
+
